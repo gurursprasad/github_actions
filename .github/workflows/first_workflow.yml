@@ -15,12 +15,8 @@ jobs:
                 ls -lrta
                 cat README.md
 
-            # - name: Generate ASCII Artwork
-            #   run: cowsay -f dragon "Run for cover, I'm a DRAGON!!!!RAWR" >> dragon.txt
-
-            - uses: mscoutermarsh/ascii-art-action@master
-              with:
-                text: 'SHIP IT'
+            - name: Generate ASCII Artwork
+              run: cowsay -f dragon "Run for cover, I'm a DRAGON!!!!RAWR" >> dragon.txt
 
             # - name: List Files
             #   run: ls -la
