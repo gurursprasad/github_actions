@@ -20,7 +20,7 @@ jobs:
 
             - uses: mscoutermarsh/ascii-art-action@master
               with:
-                text: 'SHIP IT'
+                text: "Run for cover, I'm a DRAGON!!!!RAWR"
 
             # - name: List Files
             #   run: ls -la
