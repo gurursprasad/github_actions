@@ -14,6 +14,7 @@ jobs:
           ./ascii-script.sh
   test_job_2:
     runs-on: ubuntu-latest
+    needs: build_job_1
     steps:
       - name: Sleep for 10 seconds
         run: sleep 10
@@ -23,6 +24,7 @@ jobs:
         run: grep -i "dragon.txt"
   deploy_job_3:
     runs-on: ubuntu-latest
+    needs: build_job_1
     steps:
       - name: Sleep for 10 seconds
         run: sleep 10
