@@ -9,7 +9,7 @@ on:
         #     - test/**
         branches:
             - main
-            # - '!actions/*' # exclude branches starting with name 'feature'. '!' is used here to exclude the feature branch
+            - '!feature/*' # exclude branches starting with name 'feature'. '!' is used here to exclude the feature branch
     pull_request:
         types: 
             - opened
