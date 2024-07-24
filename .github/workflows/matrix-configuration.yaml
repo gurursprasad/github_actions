@@ -13,7 +13,6 @@ jobs:
                 exclude: 
                     - images: alpine
                       os: windows-latest
-
                 include:
                     - images: amd64/alpine
                       os: ubuntu-20.04
@@ -21,6 +20,5 @@ jobs:
         steps:
             - name: Echo Docker Details
               run: docker info
-
             - name: Run Images on ${{ matrix.os}}
               run: docker run ${{ matrix.images}}
